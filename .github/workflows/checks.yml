@@ -20,6 +20,7 @@ jobs:
             python -m ruff check frontier scripts tests
             python -m ruff format --check frontier scripts tests
             python -m mypy frontier scripts
+            mkdir -p work-tmp
             python -m pytest --basetemp=work-tmp/pytest
             python scripts/verify.py
           '
