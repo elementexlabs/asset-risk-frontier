@@ -1,0 +1,592 @@
+{
+  "bootstrap_requested": 400,
+  "bootstrap_valid": 400,
+  "failures": 629,
+  "models": {
+    "gradient_boosted": {
+      "calibration_bins": [
+        {
+          "failures": 358,
+          "lower": 0.0,
+          "mean_probability": 0.025989329816831618,
+          "observed_interval": [
+            0.023002745097859226,
+            0.02825051963756744
+          ],
+          "observed_rate": 0.025608011444921315,
+          "records": 13980,
+          "upper": 0.1,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 78,
+          "lower": 0.1,
+          "mean_probability": 0.14163845418429746,
+          "observed_interval": [
+            0.06390079191470967,
+            0.10497026792428357
+          ],
+          "observed_rate": 0.08450704225352113,
+          "records": 923,
+          "upper": 0.2,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 46,
+          "lower": 0.2,
+          "mean_probability": 0.23999672487033535,
+          "observed_interval": [
+            0.09762202247521333,
+            0.1647811349476069
+          ],
+          "observed_rate": 0.12637362637362637,
+          "records": 364,
+          "upper": 0.3,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 49,
+          "lower": 0.3,
+          "mean_probability": 0.35087127234367055,
+          "observed_interval": [
+            0.16510008340283572,
+            0.2836570945945946
+          ],
+          "observed_rate": 0.22272727272727272,
+          "records": 220,
+          "upper": 0.4,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 60,
+          "lower": 0.4,
+          "mean_probability": 0.44652851912084107,
+          "observed_interval": [
+            0.22748764314626851,
+            0.3547506317159702
+          ],
+          "observed_rate": 0.2912621359223301,
+          "records": 206,
+          "upper": 0.5,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 23,
+          "lower": 0.5,
+          "mean_probability": 0.538697616070592,
+          "observed_interval": [
+            0.1730357142857143,
+            0.35716165413533835
+          ],
+          "observed_rate": 0.25842696629213485,
+          "records": 89,
+          "upper": 0.6,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 13,
+          "lower": 0.6,
+          "mean_probability": 0.647900983126996,
+          "observed_interval": [
+            0.0958460918614021,
+            0.26251644736842106
+          ],
+          "observed_rate": 0.17567567567567569,
+          "records": 74,
+          "upper": 0.7,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 2,
+          "lower": 0.7,
+          "mean_probability": 0.7253802975581485,
+          "observed_interval": [
+            0.0,
+            0.3333333333333333
+          ],
+          "observed_rate": 0.11764705882352941,
+          "records": 17,
+          "upper": 0.8,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 0,
+          "lower": 0.8,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 0.9,
+          "valid_resamples": 0
+        },
+        {
+          "failures": 0,
+          "lower": 0.9,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 1.0,
+          "valid_resamples": 0
+        }
+      ],
+      "metrics": {
+        "auc": {
+          "estimate": 0.7298563400481995,
+          "interval": [
+            0.7080488445607833,
+            0.7535142399924685
+          ]
+        },
+        "average_precision": {
+          "estimate": 0.13322535071183333,
+          "interval": [
+            0.11780203606929143,
+            0.16165106509589497
+          ]
+        },
+        "brier": {
+          "estimate": 0.03890935477295514,
+          "interval": [
+            0.03652903969621733,
+            0.041376607605166975
+          ]
+        },
+        "ece": {
+          "estimate": 0.014478593359723074,
+          "interval": [
+            0.012362275019010016,
+            0.018059514794467206
+          ]
+        },
+        "mean_probability": {
+          "estimate": 0.0541056329867627,
+          "interval": [
+            0.0525531587232877,
+            0.0560492883503238
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.039627039627039624,
+          "interval": [
+            0.036574377190961155,
+            0.042859475604604715
+          ]
+        },
+        "precision_top_0.01": {
+          "estimate": 0.18238993710691823,
+          "interval": [
+            0.11390613804633389,
+            0.25625
+          ]
+        },
+        "precision_top_0.05": {
+          "estimate": 0.22292191435768263,
+          "interval": [
+            0.19492999069723066,
+            0.2568948611987985
+          ]
+        },
+        "precision_top_0.1": {
+          "estimate": 0.15994962216624686,
+          "interval": [
+            0.14177472613266268,
+            0.18231139050154985
+          ]
+        }
+      },
+      "top_k_denominators": {
+        "0.01": 159,
+        "0.05": 794,
+        "0.1": 1588
+      }
+    },
+    "logistic": {
+      "calibration_bins": [
+        {
+          "failures": 383,
+          "lower": 0.0,
+          "mean_probability": 0.03429989698655436,
+          "observed_interval": [
+            0.024110365822302075,
+            0.029319819280508693
+          ],
+          "observed_rate": 0.026785089866424226,
+          "records": 14299,
+          "upper": 0.1,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 45,
+          "lower": 0.1,
+          "mean_probability": 0.16848917816900622,
+          "observed_interval": [
+            0.06208215077605322,
+            0.11483318897229748
+          ],
+          "observed_rate": 0.08604206500956023,
+          "records": 523,
+          "upper": 0.2,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 59,
+          "lower": 0.2,
+          "mean_probability": 0.2390955984842507,
+          "observed_interval": [
+            0.08172535514421007,
+            0.13865044420503692
+          ],
+          "observed_rate": 0.10905730129390019,
+          "records": 541,
+          "upper": 0.3,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 90,
+          "lower": 0.3,
+          "mean_probability": 0.35348040809429676,
+          "observed_interval": [
+            0.2126906868942267,
+            0.3115871549663116
+          ],
+          "observed_rate": 0.26392961876832843,
+          "records": 341,
+          "upper": 0.4,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 33,
+          "lower": 0.4,
+          "mean_probability": 0.4374039112428634,
+          "observed_interval": [
+            0.1851010101010101,
+            0.3391666666666666
+          ],
+          "observed_rate": 0.2619047619047619,
+          "records": 126,
+          "upper": 0.5,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 16,
+          "lower": 0.5,
+          "mean_probability": 0.5310541596097199,
+          "observed_interval": [
+            0.27079326923076924,
+            0.6155405405405404
+          ],
+          "observed_rate": 0.4444444444444444,
+          "records": 36,
+          "upper": 0.6,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 3,
+          "lower": 0.6,
+          "mean_probability": 0.6292264379698702,
+          "observed_interval": [
+            0.0,
+            1.0
+          ],
+          "observed_rate": 0.42857142857142855,
+          "records": 7,
+          "upper": 0.7,
+          "valid_resamples": 399
+        },
+        {
+          "failures": 0,
+          "lower": 0.7,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 0.8,
+          "valid_resamples": 0
+        },
+        {
+          "failures": 0,
+          "lower": 0.8,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 0.9,
+          "valid_resamples": 0
+        },
+        {
+          "failures": 0,
+          "lower": 0.9,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 1.0,
+          "valid_resamples": 0
+        }
+      ],
+      "metrics": {
+        "auc": {
+          "estimate": 0.7126920378170629,
+          "interval": [
+            0.6909555408218646,
+            0.7381854021276346
+          ]
+        },
+        "average_precision": {
+          "estimate": 0.15560543711654365,
+          "interval": [
+            0.12958152710785034,
+            0.1900017554735128
+          ]
+        },
+        "brier": {
+          "estimate": 0.037104563361297124,
+          "interval": [
+            0.03449624545182659,
+            0.039546671502504606
+          ]
+        },
+        "ece": {
+          "estimate": 0.01752013058411174,
+          "interval": [
+            0.014587854811322628,
+            0.02066789502703865
+          ]
+        },
+        "mean_probability": {
+          "estimate": 0.05714717021115137,
+          "interval": [
+            0.05579490365518517,
+            0.058666869613682046
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.039627039627039624,
+          "interval": [
+            0.036574377190961155,
+            0.042859475604604715
+          ]
+        },
+        "precision_top_0.01": {
+          "estimate": 0.32075471698113206,
+          "interval": [
+            0.24528301886792453,
+            0.4025157232704403
+          ]
+        },
+        "precision_top_0.05": {
+          "estimate": 0.22418136020151133,
+          "interval": [
+            0.19210840748225694,
+            0.2601408363023407
+          ]
+        },
+        "precision_top_0.1": {
+          "estimate": 0.15680100755667506,
+          "interval": [
+            0.1392387128144629,
+            0.17725334251305613
+          ]
+        }
+      },
+      "top_k_denominators": {
+        "0.01": 159,
+        "0.05": 794,
+        "0.1": 1588
+      }
+    },
+    "prevalence": {
+      "calibration_bins": [
+        {
+          "failures": 629,
+          "lower": 0.0,
+          "mean_probability": 0.05083826600090889,
+          "observed_interval": [
+            0.036574377190961155,
+            0.042859475604604715
+          ],
+          "observed_rate": 0.039627039627039624,
+          "records": 15873,
+          "upper": 0.1,
+          "valid_resamples": 400
+        },
+        {
+          "failures": 0,
+          "lower": 0.1,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 0.2,
+          "valid_resamples": 0
+        },
+        {
+          "failures": 0,
+          "lower": 0.2,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 0.3,
+          "valid_resamples": 0
+        },
+        {
+          "failures": 0,
+          "lower": 0.3,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 0.4,
+          "valid_resamples": 0
+        },
+        {
+          "failures": 0,
+          "lower": 0.4,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 0.5,
+          "valid_resamples": 0
+        },
+        {
+          "failures": 0,
+          "lower": 0.5,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 0.6,
+          "valid_resamples": 0
+        },
+        {
+          "failures": 0,
+          "lower": 0.6,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 0.7,
+          "valid_resamples": 0
+        },
+        {
+          "failures": 0,
+          "lower": 0.7,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 0.8,
+          "valid_resamples": 0
+        },
+        {
+          "failures": 0,
+          "lower": 0.8,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 0.9,
+          "valid_resamples": 0
+        },
+        {
+          "failures": 0,
+          "lower": 0.9,
+          "mean_probability": null,
+          "observed_interval": null,
+          "observed_rate": null,
+          "records": 0,
+          "upper": 1.0,
+          "valid_resamples": 0
+        }
+      ],
+      "metrics": {
+        "auc": {
+          "estimate": 0.49262666976483016,
+          "interval": [
+            0.4698822816869157,
+            0.5131547315253586
+          ]
+        },
+        "average_precision": {
+          "estimate": 0.03860594846467157,
+          "interval": [
+            0.03514852178395981,
+            0.0424339516988991
+          ]
+        },
+        "brier": {
+          "estimate": 0.03818355360746073,
+          "interval": [
+            0.03544548584321009,
+            0.04108822403260838
+          ]
+        },
+        "ece": {
+          "estimate": 0.011211226373869267,
+          "interval": [
+            0.007981807277342214,
+            0.014278980006204966
+          ]
+        },
+        "mean_probability": {
+          "estimate": 0.05083826600090889,
+          "interval": [
+            0.05082003886416215,
+            0.050856147601749224
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.039627039627039624,
+          "interval": [
+            0.036574377190961155,
+            0.042859475604604715
+          ]
+        },
+        "precision_top_0.01": {
+          "estimate": 0.006289308176100629,
+          "interval": [
+            0.006329113924050633,
+            0.06832298136645963
+          ]
+        },
+        "precision_top_0.05": {
+          "estimate": 0.022670025188916875,
+          "interval": [
+            0.022556390977443608,
+            0.04668677183214762
+          ]
+        },
+        "precision_top_0.1": {
+          "estimate": 0.02455919395465995,
+          "interval": [
+            0.025379505116326917,
+            0.0435174591731185
+          ]
+        }
+      },
+      "top_k_denominators": {
+        "0.01": 159,
+        "0.05": 794,
+        "0.1": 1588
+      }
+    }
+  },
+  "paired_auc_difference": {
+    "comparison": "gradient_boosted minus logistic",
+    "estimate": 0.01716430223113663,
+    "interval": [
+      -0.0019471205505955185,
+      0.03316294749939772
+    ],
+    "winner": "No clear AUC winner"
+  },
+  "profiles": 11637,
+  "records": 15873,
+  "unavailable": {
+    "age_only": "No ages supplied",
+    "health_index": "No ages, condition or calibrated category mapping supplied"
+  }
+}

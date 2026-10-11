@@ -1,0 +1,315 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 5 /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+4 0 obj
+<< /Length 3040 >>
+stream
+BT /F1 10 Tf 44 800 Td 11.2 TL
+(Technical note: public fleet and evidence boundary) Tj T*
+() Tj T*
+(Page 1: question, licence and estimand) Tj T*
+() Tj T*
+(This study asks whether supplied attributes distinguish distribution-transformer records) Tj T*
+(with annual burn labels, and what an assumed intervention budget buys in customer-) Tj T*
+(interruption risk. The complete public register is used. It does not estimate the) Tj T*
+(treatment effect of maintenance, diagnose individual equipment or recommend a utility) Tj T*
+(capital plan.) Tj T*
+() Tj T*
+(The source is Mendeley Data version 4, DOI 10.17632/yzyj46xpmy.4, published 17 September) Tj T*
+(2021. The creators are Diego A Bravo M, Carlos Lozano and Laura Alvarez. The source) Tj T*
+(assigns Creative Commons Attribution 4.0 International. DATA.md contains the attribution) Tj T*
+(and source licence description verbatim, plus the complete public licence. Raw workbooks) Tj T*
+(are unmodified; derived tables and renamed fields are modifications. No endorsement is) Tj T*
+(implied. Source metadata, file sizes, hashes and exact headers are frozen in) Tj T*
+(data/manifest.json.) Tj T*
+() Tj T*
+(The landing page describes an approximately 16,000-transformer register covering 42) Tj T*
+(municipalities. Both annual files contain 15,873 source records with 16 fields. The) Tj T*
+(earlier file has 807 burned labels and the test file has 629. These are annual binary) Tj T*
+(labels, with no individual failure dates. Every record is preserved, including anonymous) Tj T*
+(repeated rows. The denominators refer to published records, not a independently verified) Tj T*
+(count of distinct physical assets. Counts: outputs/audit.json; schemas:) Tj T*
+(data/manifest.json.) Tj T*
+() Tj T*
+(The classification estimand is the conditional probability of a supplied annual burn) Tj T*
+(label given the permitted attributes. Power, protection, lightning exposure, connectors,) Tj T*
+(client and installation types, users, overhead-network and circuit-queue flags are) Tj T*
+(predictors. The LOCATION field is binary; it is not a municipality key. Burning rate is) Tj T*
+(excluded because its observation window is undefined and it may encode the target.) Tj T*
+(Derived criticality and unsupplied energy are also excluded because their construction) Tj T*
+(or temporal availability is unclear. Network length is excluded because its units need) Tj T*
+(verification. Predictor choices: config/study.json.) Tj T*
+() Tj T*
+(No installation dates, ages, identities, feeder keys or observed condition measurements) Tj T*
+(are provided. Consequently age-only, condition-health and survival-time comparisons are) Tj T*
+(unavailable. The study does not invent those inputs or reinterpret the annual label as a) Tj T*
+(condition measurement. Undocumented feature timestamps prevent a prospective forecast) Tj T*
+(claim even after grouped validation. These boundaries govern both the evaluation and the) Tj T*
+(capital scenario.) Tj T*
+ET
+BT /F1 9 Tf 44 35 Td (Technical note - page 1 of 5) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 3478 >>
+stream
+BT /F1 10 Tf 44 800 Td 11.2 TL
+(Technical note: published method and validation design) Tj T*
+() Tj T*
+(Page 2: health kernel and leakage controls) Tj T*
+() Tj T*
+(Selected CNAIM v2.1 equations are independently implemented in frontier/health.py from) Tj T*
+(the Ofgem publication dated 1 April 2021. The source is DNO Common Network Asset Indices) Tj T*
+(Methodology, sections 6.1.1 and 6.1.4-7, equations 3-9 and table 5. Source document: htt) Tj T*
+(ps://www.ofgem.gov.uk/sites/default/files/docs/2021/04/dno_common_network_asset_indices_) Tj T*
+(methodology_v2.1_final_01-04-2021.pdf) Tj T*
+() Tj T*
+(The kernel adjusts expected life by supplied location and duty factors, derives an) Tj T*
+(exponential initial score with the published age cap, applies condition and reliability) Tj T*
+(factors, then cap and collar in the specified order. It supplies health bands and the) Tj T*
+(cubic annual functional-failure curve. Callers must supply justified life and calibrated) Tj T*
+(modifiers; the kernel is a selected-method implementation rather than a complete) Tj T*
+(category-specific CNAIM implementation. Tests check missing-age refusal, boundaries,) Tj T*
+(cap-before-collar and the constant low-health failure curve. No foreign calibration is) Tj T*
+(silently applied to this register. The annual burn endpoint differs from CNAIM) Tj T*
+(functional failure; no equivalence is claimed.) Tj T*
+() Tj T*
+(The study protocol was committed before scoring, and revised before scoring to exclude) Tj T*
+(unverified length units. The fixed seed is 20261011. Canonical permitted predictor) Tj T*
+(profiles are hashed, with 5 deterministic folds. The secondary hash segment marks) Tj T*
+(training-only calibration groups. Within each fold, models fit earlier-year records) Tj T*
+(outside the held profile fold; calibration uses a disjoint subset of those earlier-year) Tj T*
+(groups. Later-year records in the held fold are scored once. The split rule and model) Tj T*
+(parameters are in config/study.json; every record assignment is in outputs/splits.csv,) Tj T*
+(written before fitting.) Tj T*
+() Tj T*
+(All profiles shared across the two annual files stay in the same held fold. Fit,) Tj T*
+(calibration and test profile overlaps are zero for each fold, as verified in) Tj T*
+(outputs/split-evidence.json. This prevents memorising an identical observed profile from) Tj T*
+(the earlier-year register. It is stronger than treating worksheet row order as identity.) Tj T*
+(It cannot rule out one physical asset changing its profile, or correlation among) Tj T*
+(different records on an unidentified feeder. Location and feeder block validation are) Tj T*
+(unavailable. No random row split or assumed asset matching is used.) Tj T*
+() Tj T*
+(Numerical imputation, scaling and categorical encoding are fitted only on fitting) Tj T*
+(records. The models are regularised logistic classification and histogram gradient-) Tj T*
+(boosted classification with fixed hyperparameters. Calibration fits logistic regression) Tj T*
+(on raw log-odds using only the separate earlier-year calibration outcomes. A constant) Tj T*
+(earlier-year prevalence comparator is also scored. No test outcomes choose features,) Tj T*
+(tune models, calibrate probabilities or choose the capital model. The entire later-year) Tj T*
+(register receives held-out predictions; the folds are cross-fitting partitions, not a) Tj T*
+(sampled fleet.) Tj T*
+ET
+BT /F1 9 Tf 44 35 Td (Technical note - page 2 of 5) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 3329 >>
+stream
+BT /F1 10 Tf 44 800 Td 11.2 TL
+(Technical note: discrimination, calibration and inspection) Tj T*
+() Tj T*
+(Page 3: evaluation results and uncertainty) Tj T*
+() Tj T*
+(Evaluation uses 15,873 test records, 629 annual burned labels and 11,637 predictor) Tj T*
+(profiles. Source: outputs/evaluation.json. The yearly outcome frequency changes, so) Tj T*
+(calibration learned earlier need not remain correct later. Probabilities represent the) Tj T*
+(annual label association, conditional on permitted attributes, rather than guaranteed) Tj T*
+(future failure frequencies.) Tj T*
+() Tj T*
+(gradient_boosted: AUC 0.730 [0.708, 0.754]; Brier 0.039 [0.037, 0.041]; ECE 0.014) Tj T*
+([0.012, 0.018].) Tj T*
+(logistic: AUC 0.713 [0.691, 0.738]; Brier 0.037 [0.034, 0.040]; ECE 0.018 [0.015,) Tj T*
+(0.021].) Tj T*
+(prevalence: AUC 0.493 [0.470, 0.513]; Brier 0.038 [0.035, 0.041]; ECE 0.011 [0.008,) Tj T*
+(0.014].) Tj T*
+() Tj T*
+(AUC measures pairwise discrimination, Brier measures squared probability error, and) Tj T*
+(expected calibration error uses fixed probability bins. Lower Brier and ECE are better.) Tj T*
+(The naive comparator is training prevalence, not age. Age performance remains unknown.) Tj T*
+(Every point estimate and interval is available in outputs/evaluation.json, with) Tj T*
+(calibration-bin counts, failures, mean probabilities and observed-rate intervals. Empty) Tj T*
+(bins are null rather than evidence of calibration.) Tj T*
+() Tj T*
+(The paired AUC difference, gradient boosted minus logistic, is 0.017 [-0.002, 0.033].) Tj T*
+(The prespecified AUC decision is: No clear AUC winner. A winner is reported only when) Tj T*
+(the paired difference interval excludes zero; otherwise the evidence does not separate) Tj T*
+(the two models. Test metrics do not select the capital model. Logistic classification) Tj T*
+(was declared for planning before model scoring. Source: config/study.json and) Tj T*
+(outputs/evaluation.json.) Tj T*
+() Tj T*
+(Inspection budgets select the highest probability records, with stable source-row tie) Tj T*
+(order independent of outcome. The top fractions use ceil of the fraction times the test-) Tj T*
+(register size; inspection denominators are 159, 794, 1588. Logistic precisions are 0.321) Tj T*
+([0.245, 0.403], 0.224 [0.192, 0.260], 0.157 [0.139, 0.177], respectively. Selection is a) Tj T*
+(ranking assessment, not evidence that inspecting those records prevents failures.) Tj T*
+(Source: outputs/evaluation.json and outputs/scores-2020.csv.) Tj T*
+() Tj T*
+(All displayed intervals are percentile 95% bootstrap intervals. Metric intervals) Tj T*
+(resample later-year predictor profiles as clusters, retaining all records inside each) Tj T*
+(sampled profile; the same draws support paired comparisons. There are 400 valid) Tj T*
+(resamples. Predictions remain fixed, so these intervals describe test-register sampling) Tj T*
+(uncertainty conditional on fitted models. They do not include uncertainty from model) Tj T*
+(fitting, unidentified feeders, label errors or unrecorded feature timestamps.) Tj T*
+(Calibration-bin denominators vary by draw and valid counts are recorded. The group) Tj T*
+(scheme controls observed-profile leakage only, and should not be read as a complete) Tj T*
+(dependence model.) Tj T*
+ET
+BT /F1 9 Tf 44 35 Td (Technical note - page 3 of 5) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 3587 >>
+stream
+BT /F1 10 Tf 44 800 Td 11.2 TL
+(Technical note: risk and assumed capital allocation) Tj T*
+() Tj T*
+(Page 4: frontier and mathematical scope) Tj T*
+() Tj T*
+(Risk for a record equals its calibrated logistic annual-label probability times the) Tj T*
+(source number of users. The total is a customer-interruption proxy, with no assumed) Tj T*
+(outage duration or monetary loss. Users enter as supplied counts, not as a derived lost-) Tj T*
+(load estimate. This excludes safety, environmental and restoration consequences. Source) Tj T*
+(scores: outputs/scores-2020.csv; interval scope: outputs/provenance.json.) Tj T*
+() Tj T*
+(The scenario assumes refurbishment costs CAD 6,000 and replacement CAD 12,000. Assumed) Tj T*
+(reductions are 60% and 90%. These are labelled assumptions, not public price evidence or) Tj T*
+(empirically identified treatment effects. They were fixed before scoring in) Tj T*
+(config/study.json. All budget points are independent one-year scenarios; there is no) Tj T*
+(forecast of deterioration, recurring benefit, discounting or multi-year asset) Tj T*
+(transition.) Tj T*
+() Tj T*
+(For these equal-unit costs and diminishing benefits, refurbishment supplies a first) Tj T*
+(increment of benefit and replacement supplies an additional smaller increment at the) Tj T*
+(same marginal cost. Sorting all marginal increments gives an exact optimum: an asset's) Tj T*
+(second increment cannot precede its more valuable first increment. Integer budgets buy) Tj T*
+(only whole increments; unused budget remains unspent. No record gets incompatible final) Tj T*
+(actions. This proof depends on the stated equal costs, homogeneous effects and additive) Tj T*
+(risk. It does not generalise to arbitrary engineering project costs or interacting) Tj T*
+(failures. The implementation is frontier/capital.py; small exhaustive tests compare) Tj T*
+(every feasible action combination.) Tj T*
+() Tj T*
+(Spend CAD 0: reduction 0.0, interval [0.0, 0.0]; refurbish 0, replace 0.) Tj T*
+(Spend CAD 300,000: reduction 508.2, interval [375.9, 661.4]; refurbish 42, replace 4.) Tj T*
+(Spend CAD 600,000: reduction 816.3, interval [623.9, 1039.7]; refurbish 78, replace 11.) Tj T*
+(Spend CAD 1,200,000: reduction 1287.2, interval [997.9, 1611.4]; refurbish 132, replace) Tj T*
+(34.) Tj T*
+(Spend CAD 2,400,000: reduction 1935.1, interval [1520.9, 2386.2]; refurbish 216, replace) Tj T*
+(92.) Tj T*
+(Spend CAD 4,800,000: reduction 2809.9, interval [2249.8, 3407.6]; refurbish 396, replace) Tj T*
+(202.) Tj T*
+(Spend CAD 9,600,000: reduction 3961.4, interval [3283.7, 4671.6]; refurbish 820, replace) Tj T*
+(390.) Tj T*
+() Tj T*
+(These numerical points use the complete 15,873-record planning register. Source:) Tj T*
+(outputs/frontier.json; chosen source rows: outputs/interventions.csv. The file also) Tj T*
+(compares probability-only, users-only and risk-based replacement rules. Age and health) Tj T*
+(replacement rules are unavailable, not approximated by these other rules.) Tj T*
+() Tj T*
+(Frontier intervals refit the declared failure model and training-only calibration on 100) Tj T*
+(independently resampled earlier-year profile sets, keeping preprocessing fixed.) Tj T*
+(Displayed bounds evaluate each fixed point-estimate plan under those model draws.) Tj T*
+(Separate reoptimised bounds refit the plan for each draw. Both condition on the later-) Tj T*
+(year register. Neither resamples costs, effects, consequence counts or causal) Tj T*
+(assumptions; a narrow interval does not validate those assumptions.) Tj T*
+ET
+BT /F1 9 Tf 44 35 Td (Technical note - page 4 of 5) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 3524 >>
+stream
+BT /F1 10 Tf 44 800 Td 11.2 TL
+(Technical note: register audit, ranking impact and replay) Tj T*
+() Tj T*
+(Page 5: quality, reproducibility and remaining work) Tj T*
+() Tj T*
+(The register audit checks missing fields, nonbinary flags, nonpositive power, negative) Tj T*
+(numeric exposures, noninteger users, maximum lightning density below average and zero-) Tj T*
+(user records. Across these checks the earlier register has 5395 records with any flagged) Tj T*
+(issue and the later register has 5395. The count includes the separate network-length) Tj T*
+(plausibility flag. Exact issue-by-issue counts and denominators are in) Tj T*
+(outputs/audit.json. Row-level flags are in outputs/quality-flags-2019.csv and) Tj T*
+(outputs/quality-flags-2020.csv. Passing supplied-field checks does not establish) Tj T*
+(trustworthy identities, dates, units or completeness of unrecorded condition) Tj T*
+(information.) Tj T*
+() Tj T*
+(Exact duplicate excess is 78 earlier and 75 later; 120 later records lie in exact) Tj T*
+(repeated-row sets. There are 4236 excess repeated predictor profiles and 189 profiles) Tj T*
+(with mixed labels. These can be distinct transformers with identical recorded) Tj T*
+(attributes. No anonymous record is deleted or counted as a verified duplicate asset.) Tj T*
+(Profiles control splitting and bootstrap clustering; deterministic tie order selects) Tj T*
+(among equal ranks. Counts: outputs/audit.json.) Tj T*
+() Tj T*
+(Network lengths above the declared 100 km plausibility threshold occur in 5395 later) Tj T*
+(records. Source maximum 717,125 suggests unverified units. No divisor or unit correction) Tj T*
+(is invented. Excluding this field is the prespecified headline choice. Including it with) Tj T*
+(the identical split assignments replaces 41 of the top 159 logistic inspection records;) Tj T*
+(rank correlation is 0.977. All inspection-budget changes for both models are in) Tj T*
+(outputs/ranking-sensitivity.json. Quality flags and their overlap with probability) Tj T*
+(rankings are in outputs/audit.json.) Tj T*
+() Tj T*
+(Missing age and condition affect every one of the 15,873 later records. This prevents an) Tj T*
+(empirical health ranking, an age baseline, both requested replacement comparators and a) Tj T*
+(condition-risk validation. These are unfinished requirements because the required source) Tj T*
+(fields do not exist, not because synthetic substitutes have been accepted. Failure) Tj T*
+(dates, longitudinal identity, input observation dates, independently measured) Tj T*
+(intervention effects and locally justified consequence and cost models are also needed) Tj T*
+(before operational translation.) Tj T*
+() Tj T*
+(One command, python -m frontier.study, rebuilds the entire analysis without network from) Tj T*
+(the included raw files and pinned protocol. Frozen byte sizes and SHA-256 values are) Tj T*
+(verified before reading. Splits are emitted before scoring. Seeds, runtime versions and) Tj T*
+(interval scopes are in outputs/provenance.json; every generated output is covered by) Tj T*
+(outputs/SHA256SUMS. Fixture tests cover leakage separation, calibration roles, bad) Tj T*
+(outcomes, missing age and budget optimality. CI runs lint, types, offline fixtures and) Tj T*
+(checksum verification. A local clean-checkout replay receipt with commands and exit) Tj T*
+(codes is maintained in docs/REPLAY.md. The complete release package remains local) Tj T*
+(pending the Director's release check.) Tj T*
+ET
+BT /F1 9 Tf 44 35 Td (Technical note - page 5 of 5) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 12 0 R >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000141 00000 n 
+0000000209 00000 n 
+0000003301 00000 n 
+0000003427 00000 n 
+0000006957 00000 n 
+0000007083 00000 n 
+0000010464 00000 n 
+0000010590 00000 n 
+0000014230 00000 n 
+0000014358 00000 n 
+0000017935 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+18063
+%%EOF

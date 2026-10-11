@@ -1,0 +1,43 @@
+{
+  "comparison": "Include unverified network length versus excluded headline",
+  "gradient_boosted": {
+    "rank_spearman": 0.9541689631067277
+  },
+  "logistic": {
+    "rank_spearman": 0.9765302758717405
+  },
+  "records": 15873,
+  "same_splits": true,
+  "top_k_changes": {
+    "gradient_boosted_0.01": {
+      "inspection_records": 159,
+      "overlap": 117,
+      "replaced_in_top_k": 42
+    },
+    "gradient_boosted_0.05": {
+      "inspection_records": 794,
+      "overlap": 705,
+      "replaced_in_top_k": 89
+    },
+    "gradient_boosted_0.1": {
+      "inspection_records": 1588,
+      "overlap": 1423,
+      "replaced_in_top_k": 165
+    },
+    "logistic_0.01": {
+      "inspection_records": 159,
+      "overlap": 118,
+      "replaced_in_top_k": 41
+    },
+    "logistic_0.05": {
+      "inspection_records": 794,
+      "overlap": 715,
+      "replaced_in_top_k": 79
+    },
+    "logistic_0.1": {
+      "inspection_records": 1588,
+      "overlap": 1555,
+      "replaced_in_top_k": 33
+    }
+  }
+}

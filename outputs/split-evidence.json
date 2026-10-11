@@ -1,0 +1,67 @@
+[
+  {
+    "calibration_failures": 143,
+    "calibration_profiles": 1796,
+    "calibration_records": 2480,
+    "fit_failures": 509,
+    "fit_profiles": 7492,
+    "fit_records": 10140,
+    "fold": 0,
+    "profile_overlap": 0,
+    "test_failures": 145,
+    "test_profiles": 2353,
+    "test_records": 3253
+  },
+  {
+    "calibration_failures": 138,
+    "calibration_profiles": 1795,
+    "calibration_records": 2479,
+    "fit_failures": 504,
+    "fit_profiles": 7447,
+    "fit_records": 10125,
+    "fold": 1,
+    "profile_overlap": 0,
+    "test_failures": 131,
+    "test_profiles": 2389,
+    "test_records": 3267
+  },
+  {
+    "calibration_failures": 146,
+    "calibration_profiles": 1821,
+    "calibration_records": 2528,
+    "fit_failures": 488,
+    "fit_profiles": 7537,
+    "fit_records": 10197,
+    "fold": 2,
+    "profile_overlap": 0,
+    "test_failures": 129,
+    "test_profiles": 2259,
+    "test_records": 3130
+  },
+  {
+    "calibration_failures": 143,
+    "calibration_profiles": 1837,
+    "calibration_records": 2520,
+    "fit_failures": 492,
+    "fit_profiles": 7446,
+    "fit_records": 10190,
+    "fold": 3,
+    "profile_overlap": 0,
+    "test_failures": 121,
+    "test_profiles": 2376,
+    "test_records": 3193
+  },
+  {
+    "calibration_failures": 150,
+    "calibration_profiles": 1819,
+    "calibration_records": 2541,
+    "fit_failures": 515,
+    "fit_profiles": 7558,
+    "fit_records": 10292,
+    "fold": 4,
+    "profile_overlap": 0,
+    "test_failures": 103,
+    "test_profiles": 2260,
+    "test_records": 3030
+  }
+]

@@ -1,0 +1,366 @@
+[
+  {
+    "baseline_risk": 12652.265147441456,
+    "budget_cad": 0,
+    "comparators": {
+      "probability_only": {
+        "interval": [
+          0.0,
+          0.0
+        ],
+        "replacements": 0,
+        "risk_reduction": 0.0,
+        "spend_cad": 0
+      },
+      "risk_replacement_only": {
+        "interval": [
+          0.0,
+          0.0
+        ],
+        "replacements": 0,
+        "risk_reduction": 0.0,
+        "spend_cad": 0
+      },
+      "users_only": {
+        "interval": [
+          0.0,
+          0.0
+        ],
+        "replacements": 0,
+        "risk_reduction": 0.0,
+        "spend_cad": 0
+      }
+    },
+    "fixed_plan_interval": [
+      0.0,
+      0.0
+    ],
+    "reduction_fraction": 0.0,
+    "refurbishments": 0,
+    "register_records": 15873,
+    "reoptimised_interval": [
+      0.0,
+      0.0
+    ],
+    "replacements": 0,
+    "risk_reduction": 0.0,
+    "spend_cad": 0,
+    "unavailable_comparators": [
+      "age_based",
+      "health_index_only"
+    ],
+    "valid_model_resamples": 100
+  },
+  {
+    "baseline_risk": 12652.265147441456,
+    "budget_cad": 300000,
+    "comparators": {
+      "probability_only": {
+        "interval": [
+          65.53161286699442,
+          110.4371225793581
+        ],
+        "replacements": 25,
+        "risk_reduction": 91.60504419489936,
+        "spend_cad": 300000
+      },
+      "risk_replacement_only": {
+        "interval": [
+          327.35675699934865,
+          598.1049424871798
+        ],
+        "replacements": 25,
+        "risk_reduction": 451.55759648162143,
+        "spend_cad": 300000
+      },
+      "users_only": {
+        "interval": [
+          24.736289648007364,
+          147.42745475327146
+        ],
+        "replacements": 25,
+        "risk_reduction": 61.70904496963784,
+        "spend_cad": 300000
+      }
+    },
+    "fixed_plan_interval": [
+      375.8807201003706,
+      661.3862864085415
+    ],
+    "reduction_fraction": 0.040168837841194294,
+    "refurbishments": 42,
+    "register_records": 15873,
+    "reoptimised_interval": [
+      389.45822570954147,
+      683.2357004828233
+    ],
+    "replacements": 4,
+    "risk_reduction": 508.22678703137007,
+    "spend_cad": 300000,
+    "unavailable_comparators": [
+      "age_based",
+      "health_index_only"
+    ],
+    "valid_model_resamples": 100
+  },
+  {
+    "baseline_risk": 12652.265147441456,
+    "budget_cad": 600000,
+    "comparators": {
+      "probability_only": {
+        "interval": [
+          148.3723572499682,
+          242.80695504721095
+        ],
+        "replacements": 50,
+        "risk_reduction": 200.51268336297204,
+        "spend_cad": 600000
+      },
+      "risk_replacement_only": {
+        "interval": [
+          560.609916297869,
+          967.5437453884879
+        ],
+        "replacements": 50,
+        "risk_reduction": 747.8999328582328,
+        "spend_cad": 600000
+      },
+      "users_only": {
+        "interval": [
+          46.72049158679578,
+          230.46151259198305
+        ],
+        "replacements": 50,
+        "risk_reduction": 103.09351693628851,
+        "spend_cad": 600000
+      }
+    },
+    "fixed_plan_interval": [
+      623.8935018269548,
+      1039.6691476970902
+    ],
+    "reduction_fraction": 0.06452184090170779,
+    "refurbishments": 78,
+    "register_records": 15873,
+    "reoptimised_interval": [
+      642.2531759387633,
+      1062.7517794089686
+    ],
+    "replacements": 11,
+    "risk_reduction": 816.3474388894401,
+    "spend_cad": 600000,
+    "unavailable_comparators": [
+      "age_based",
+      "health_index_only"
+    ],
+    "valid_model_resamples": 100
+  },
+  {
+    "baseline_risk": 12652.265147441456,
+    "budget_cad": 1200000,
+    "comparators": {
+      "probability_only": {
+        "interval": [
+          242.4719102403406,
+          390.8292990923509
+        ],
+        "replacements": 100,
+        "risk_reduction": 327.03997317855567,
+        "spend_cad": 1200000
+      },
+      "risk_replacement_only": {
+        "interval": [
+          922.0182149109362,
+          1502.598056881077
+        ],
+        "replacements": 100,
+        "risk_reduction": 1190.5309403719884,
+        "spend_cad": 1200000
+      },
+      "users_only": {
+        "interval": [
+          77.09546526161994,
+          337.3297947989552
+        ],
+        "replacements": 100,
+        "risk_reduction": 157.6243458974842,
+        "spend_cad": 1200000
+      }
+    },
+    "fixed_plan_interval": [
+      997.872064188554,
+      1611.4279054342603
+    ],
+    "reduction_fraction": 0.10174003714221676,
+    "refurbishments": 132,
+    "register_records": 15873,
+    "reoptimised_interval": [
+      1018.9786376523745,
+      1644.52890207197
+    ],
+    "replacements": 34,
+    "risk_reduction": 1287.2419260338684,
+    "spend_cad": 1200000,
+    "unavailable_comparators": [
+      "age_based",
+      "health_index_only"
+    ],
+    "valid_model_resamples": 100
+  },
+  {
+    "baseline_risk": 12652.265147441456,
+    "budget_cad": 2400000,
+    "comparators": {
+      "probability_only": {
+        "interval": [
+          489.20404140215555,
+          757.425573259251
+        ],
+        "replacements": 200,
+        "risk_reduction": 650.5333528361107,
+        "spend_cad": 2400000
+      },
+      "risk_replacement_only": {
+        "interval": [
+          1441.1934563243065,
+          2278.8710239901566
+        ],
+        "replacements": 200,
+        "risk_reduction": 1843.9067386736747,
+        "spend_cad": 2400000
+      },
+      "users_only": {
+        "interval": [
+          155.71726814805237,
+          578.9598880471832
+        ],
+        "replacements": 200,
+        "risk_reduction": 285.87774184014523,
+        "spend_cad": 2400000
+      }
+    },
+    "fixed_plan_interval": [
+      1520.8895003869875,
+      2386.1567353136807
+    ],
+    "reduction_fraction": 0.15294662045423693,
+    "refurbishments": 216,
+    "register_records": 15873,
+    "reoptimised_interval": [
+      1550.7527787063777,
+      2419.9063837226176
+    ],
+    "replacements": 92,
+    "risk_reduction": 1935.1211953920983,
+    "spend_cad": 2400000,
+    "unavailable_comparators": [
+      "age_based",
+      "health_index_only"
+    ],
+    "valid_model_resamples": 100
+  },
+  {
+    "baseline_risk": 12652.265147441456,
+    "budget_cad": 4800000,
+    "comparators": {
+      "probability_only": {
+        "interval": [
+          1048.9221642430375,
+          1583.3307605195187
+        ],
+        "replacements": 400,
+        "risk_reduction": 1356.343798920292,
+        "spend_cad": 4800000
+      },
+      "risk_replacement_only": {
+        "interval": [
+          2133.765164362521,
+          3265.2566087808127
+        ],
+        "replacements": 400,
+        "risk_reduction": 2685.0556665821996,
+        "spend_cad": 4800000
+      },
+      "users_only": {
+        "interval": [
+          327.62641238861414,
+          1021.1434606357395
+        ],
+        "replacements": 400,
+        "risk_reduction": 547.6737240633295,
+        "spend_cad": 4800000
+      }
+    },
+    "fixed_plan_interval": [
+      2249.766220925741,
+      3407.6031493309138
+    ],
+    "reduction_fraction": 0.22208636729234824,
+    "refurbishments": 396,
+    "register_records": 15873,
+    "reoptimised_interval": [
+      2296.266183545063,
+      3451.6873317787986
+    ],
+    "replacements": 202,
+    "risk_reduction": 2809.8956046148596,
+    "spend_cad": 4800000,
+    "unavailable_comparators": [
+      "age_based",
+      "health_index_only"
+    ],
+    "valid_model_resamples": 100
+  },
+  {
+    "baseline_risk": 12652.265147441456,
+    "budget_cad": 9600000,
+    "comparators": {
+      "probability_only": {
+        "interval": [
+          1946.1238078919944,
+          2874.6744713045414
+        ],
+        "replacements": 800,
+        "risk_reduction": 2473.513535718348,
+        "spend_cad": 9600000
+      },
+      "risk_replacement_only": {
+        "interval": [
+          3107.2690817257862,
+          4514.8293889314455
+        ],
+        "replacements": 800,
+        "risk_reduction": 3794.596700597959,
+        "spend_cad": 9600000
+      },
+      "users_only": {
+        "interval": [
+          659.5226282406843,
+          1694.5340115660322
+        ],
+        "replacements": 800,
+        "risk_reduction": 985.7072968094648,
+        "spend_cad": 9600000
+      }
+    },
+    "fixed_plan_interval": [
+      3283.7275330166453,
+      4671.591746082939
+    ],
+    "reduction_fraction": 0.31309745483948936,
+    "refurbishments": 820,
+    "register_records": 15873,
+    "reoptimised_interval": [
+      3333.3003431043194,
+      4785.320684705816
+    ],
+    "replacements": 390,
+    "risk_reduction": 3961.3920156182967,
+    "spend_cad": 9600000,
+    "unavailable_comparators": [
+      "age_based",
+      "health_index_only"
+    ],
+    "valid_model_resamples": 100
+  }
+]

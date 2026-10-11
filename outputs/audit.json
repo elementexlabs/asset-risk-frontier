@@ -1,0 +1,238 @@
+{
+  "2019": {
+    "age_unavailable": 15873,
+    "asset_identity_unavailable": 15873,
+    "distinct_predictor_profiles": 11637,
+    "duplicate_policy": "Retain all: identical attributes do not prove duplicate anonymous assets",
+    "exact_duplicate_excess": 78,
+    "failure_dates_unavailable": 15873,
+    "failures": 807,
+    "health_unavailable": 15873,
+    "issue_counts": {
+      "invalid_binary_air_network": 0,
+      "invalid_binary_burned": 0,
+      "invalid_binary_circuit_queue": 0,
+      "invalid_binary_connectors": 0,
+      "invalid_binary_criticality": 0,
+      "invalid_binary_location": 0,
+      "invalid_binary_self_protection": 0,
+      "invalid_nonnegative_burning_rate": 0,
+      "invalid_nonnegative_ddt_average": 0,
+      "invalid_nonnegative_ddt_maximum": 0,
+      "invalid_nonnegative_eens": 0,
+      "invalid_nonnegative_network_km": 0,
+      "invalid_nonnegative_users": 0,
+      "invalid_power": 0,
+      "maximum_below_average_ddt": 0,
+      "missing_air_network": 0,
+      "missing_burned": 0,
+      "missing_burning_rate": 0,
+      "missing_circuit_queue": 0,
+      "missing_client_type": 0,
+      "missing_connectors": 0,
+      "missing_criticality": 0,
+      "missing_ddt_average": 0,
+      "missing_ddt_maximum": 0,
+      "missing_eens": 0,
+      "missing_installation_type": 0,
+      "missing_location": 0,
+      "missing_network_km": 0,
+      "missing_power": 0,
+      "missing_self_protection": 0,
+      "missing_users": 0,
+      "noninteger_users": 0,
+      "suspect_network_length_over_100_km": 5395,
+      "zero_users": 0
+    },
+    "numeric_ranges": {
+      "air_network": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "burned": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "burning_rate": {
+        "maximum": 2.0,
+        "minimum": 0.0
+      },
+      "circuit_queue": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "connectors": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "criticality": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "ddt_average": {
+        "maximum": 6.818166666666661,
+        "minimum": 0.0
+      },
+      "ddt_maximum": {
+        "maximum": 17.6,
+        "minimum": 0.0
+      },
+      "eens": {
+        "maximum": 54000.0,
+        "minimum": 81.0
+      },
+      "location": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "network_km": {
+        "maximum": 717125.0,
+        "minimum": 0.0
+      },
+      "power": {
+        "maximum": 2000.0,
+        "minimum": 5.0
+      },
+      "self_protection": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "users": {
+        "maximum": 357.0,
+        "minimum": 1.0
+      }
+    },
+    "profiles_with_mixed_outcomes": 251,
+    "records": 15873,
+    "repeated_profile_excess": 4236,
+    "rows_in_exact_duplicate_sets": 124,
+    "rows_in_repeated_profiles": 6557,
+    "rows_with_any_issue": 5395
+  },
+  "2020": {
+    "age_unavailable": 15873,
+    "asset_identity_unavailable": 15873,
+    "distinct_predictor_profiles": 11637,
+    "duplicate_policy": "Retain all: identical attributes do not prove duplicate anonymous assets",
+    "exact_duplicate_excess": 75,
+    "failure_dates_unavailable": 15873,
+    "failures": 629,
+    "health_unavailable": 15873,
+    "issue_counts": {
+      "invalid_binary_air_network": 0,
+      "invalid_binary_burned": 0,
+      "invalid_binary_circuit_queue": 0,
+      "invalid_binary_connectors": 0,
+      "invalid_binary_criticality": 0,
+      "invalid_binary_location": 0,
+      "invalid_binary_self_protection": 0,
+      "invalid_nonnegative_burning_rate": 0,
+      "invalid_nonnegative_ddt_average": 0,
+      "invalid_nonnegative_ddt_maximum": 0,
+      "invalid_nonnegative_eens": 0,
+      "invalid_nonnegative_network_km": 0,
+      "invalid_nonnegative_users": 0,
+      "invalid_power": 0,
+      "maximum_below_average_ddt": 0,
+      "missing_air_network": 0,
+      "missing_burned": 0,
+      "missing_burning_rate": 0,
+      "missing_circuit_queue": 0,
+      "missing_client_type": 0,
+      "missing_connectors": 0,
+      "missing_criticality": 0,
+      "missing_ddt_average": 0,
+      "missing_ddt_maximum": 0,
+      "missing_eens": 0,
+      "missing_installation_type": 0,
+      "missing_location": 0,
+      "missing_network_km": 0,
+      "missing_power": 0,
+      "missing_self_protection": 0,
+      "missing_users": 0,
+      "noninteger_users": 0,
+      "suspect_network_length_over_100_km": 5395,
+      "zero_users": 0
+    },
+    "numeric_ranges": {
+      "air_network": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "burned": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "burning_rate": {
+        "maximum": 1.6,
+        "minimum": 0.0
+      },
+      "circuit_queue": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "connectors": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "criticality": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "ddt_average": {
+        "maximum": 6.818166666666661,
+        "minimum": 0.0
+      },
+      "ddt_maximum": {
+        "maximum": 17.6,
+        "minimum": 0.0
+      },
+      "eens": {
+        "maximum": 54000.0,
+        "minimum": 81.0
+      },
+      "location": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "network_km": {
+        "maximum": 717125.0,
+        "minimum": 0.0
+      },
+      "power": {
+        "maximum": 2000.0,
+        "minimum": 5.0
+      },
+      "self_protection": {
+        "maximum": 1.0,
+        "minimum": 0.0
+      },
+      "users": {
+        "maximum": 357.0,
+        "minimum": 1.0
+      }
+    },
+    "profiles_with_mixed_outcomes": 189,
+    "records": 15873,
+    "repeated_profile_excess": 4236,
+    "rows_in_exact_duplicate_sets": 120,
+    "rows_in_repeated_profiles": 6557,
+    "rows_with_any_issue": 5395
+  },
+  "cross_year": {
+    "identity_assumption": "Worksheet row correspondence is not treated as an asset identifier",
+    "same_row_predictors": 14826,
+    "shared_predictor_profiles": 10697
+  },
+  "ranking_effects": {
+    "complete_records_scored": 15873,
+    "duplicate_records_removed": 0,
+    "flagged_in_top_0.01": 51,
+    "flagged_in_top_0.05": 278,
+    "flagged_in_top_0.1": 622,
+    "flagged_test_records": 5395,
+    "flagged_test_risk": 5544.161259019403,
+    "unavailable_age_ranks": 15873,
+    "unavailable_health_ranks": 15873
+  }
+}
