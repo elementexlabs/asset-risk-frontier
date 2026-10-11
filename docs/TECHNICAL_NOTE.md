@@ -4,6 +4,8 @@
 
 This study asks whether supplied attributes distinguish distribution-transformer records with annual burn labels, and what an assumed intervention budget buys in customer-interruption risk. The complete public register is used. It does not estimate the treatment effect of maintenance, diagnose individual equipment or recommend a utility capital plan.
 
+This is a research result on a public register from Cauca, Colombia; it is not engineering, investment or asset-management advice, and it has not been validated on any Canadian utility's data.
+
 The source is Mendeley Data version 4, DOI 10.17632/yzyj46xpmy.4, published 17 September 2021. The creators are Diego A Bravo M, Carlos Lozano and Laura Alvarez. The source assigns Creative Commons Attribution 4.0 International. DATA.md contains the attribution and source licence description verbatim, plus the complete public licence. Raw workbooks are unmodified; derived tables and renamed fields are modifications. No endorsement is implied. Source metadata, file sizes, hashes and exact headers are frozen in data/manifest.json.
 
 The landing page describes an approximately 16,000-transformer register covering 42 municipalities. Both annual files contain 15,873 source records with 16 fields. The earlier file has 807 burned labels and the test file has 629. These are annual binary labels, with no individual failure dates. Every record is preserved, including anonymous repeated rows. The denominators refer to published records, not a independently verified count of distinct physical assets. Counts: outputs/audit.json; schemas: data/manifest.json.

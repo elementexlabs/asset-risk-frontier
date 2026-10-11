@@ -9,7 +9,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 4 0 obj
-<< /Length 3040 >>
+<< /Length 3266 >>
 stream
 BT /F1 10 Tf 44 800 Td 11.2 TL
 (Technical note: public fleet and evidence boundary) Tj T*
@@ -21,6 +21,10 @@ BT /F1 10 Tf 44 800 Td 11.2 TL
 (interruption risk. The complete public register is used. It does not estimate the) Tj T*
 (treatment effect of maintenance, diagnose individual equipment or recommend a utility) Tj T*
 (capital plan.) Tj T*
+() Tj T*
+(This is a research result on a public register from Cauca, Colombia; it is not) Tj T*
+(engineering, investment or asset-management advice, and it has not been validated on any) Tj T*
+(Canadian utility's data.) Tj T*
 () Tj T*
 (The source is Mendeley Data version 4, DOI 10.17632/yzyj46xpmy.4, published 17 September) Tj T*
 (2021. The creators are Diego A Bravo M, Carlos Lozano and Laura Alvarez. The source) Tj T*
@@ -299,17 +303,17 @@ xref
 0000000058 00000 n 
 0000000141 00000 n 
 0000000209 00000 n 
-0000003301 00000 n 
-0000003427 00000 n 
-0000006957 00000 n 
-0000007083 00000 n 
-0000010464 00000 n 
-0000010590 00000 n 
-0000014230 00000 n 
-0000014358 00000 n 
-0000017935 00000 n 
+0000003527 00000 n 
+0000003653 00000 n 
+0000007183 00000 n 
+0000007309 00000 n 
+0000010690 00000 n 
+0000010816 00000 n 
+0000014456 00000 n 
+0000014584 00000 n 
+0000018161 00000 n 
 trailer
 << /Size 14 /Root 1 0 R >>
 startxref
-18063
+18289
 %%EOF

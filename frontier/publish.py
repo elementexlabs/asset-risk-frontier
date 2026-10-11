@@ -136,7 +136,8 @@ def publish(root: Path) -> None:
         "Selected published CNAIM equations are implemented and tested, but there is no calibrated CNAIM fleet result. "
         "Annual burn labels do not establish condition-based failure mechanisms. "
         "Feature timestamps and asset identities are undocumented. The evaluation is retrospective, with disjoint observed predictor profiles; it is not a verified prospective failure forecast. "
-        "Costs and intervention effects are scenario assumptions, so the frontier is a research result on a public register, not asset-management advice."
+        "Costs and intervention effects are scenario assumptions, so the frontier is a research result on a public register, not asset-management advice. "
+        "This is a research result on a public register from Cauca, Colombia; it is not engineering, investment or asset-management advice, and it has not been validated on any Canadian utility's data."
     )
     readme = f"""# ElementeX asset risk frontier
 
@@ -204,6 +205,8 @@ Code: Apache-2.0. Data: CC BY 4.0. See LICENSE, NOTICE and CITATION.cff. Local p
 ## Page 1: question, licence and estimand
 
 This study asks whether supplied attributes distinguish distribution-transformer records with annual burn labels, and what an assumed intervention budget buys in customer-interruption risk. The complete public register is used. It does not estimate the treatment effect of maintenance, diagnose individual equipment or recommend a utility capital plan.
+
+This is a research result on a public register from Cauca, Colombia; it is not engineering, investment or asset-management advice, and it has not been validated on any Canadian utility's data.
 
 The source is Mendeley Data version {manifest["version"]}, DOI {manifest["doi"]}, published 17 September 2021. The creators are Diego A Bravo M, Carlos Lozano and Laura Alvarez. The source assigns Creative Commons Attribution 4.0 International. DATA.md contains the attribution and source licence description verbatim, plus the complete public licence. Raw workbooks are unmodified; derived tables and renamed fields are modifications. No endorsement is implied. Source metadata, file sizes, hashes and exact headers are frozen in data/manifest.json.
 
