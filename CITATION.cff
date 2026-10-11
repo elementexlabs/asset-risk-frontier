@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this research software and separately cite the source dataset in DATA.md."
+type: software
+title: "ElementeX asset risk frontier"
+authors:
+  - family-names: "Daneshpajouh"
+    given-names: "Amirhossein (Amir)"
+license: Apache-2.0
+version: 0.1.0
+date-released: 2026-10-11
+abstract: "Grouped retrospective annual burn-label evaluation and an assumed capital frontier on the complete published Cauca transformer register. Age and condition-health comparisons are unavailable in the supplied data."

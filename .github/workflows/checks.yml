@@ -1,0 +1,25 @@
+name: Offline checks
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements.lock
+      - name: Lint, types, fixtures and frozen outputs without network
+        env:
+          OMP_NUM_THREADS: '1'
+          OPENBLAS_NUM_THREADS: '1'
+        run: |
+          sudo unshare --net env "PATH=$PATH" bash -c '
+            set -eu
+            python -m ruff check frontier scripts tests
+            python -m ruff format --check frontier scripts tests
+            python -m mypy frontier scripts
+            python -m pytest --basetemp=work-tmp/pytest
+            python scripts/verify.py
+          '
