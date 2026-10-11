@@ -24,5 +24,5 @@ Verified 2026-10-11 02:36:02 PDT.
 - Lint: exit 0. Formatting: exit 0. Types: exit 0. Fixture tests: exit 0, 23 passed. Frozen-artifact verification: exit 0.
 - Hosted CI is configured but has not run. No repository was created remotely and no commit was pushed.
 
-Replay logs remain outside the tracked release package in research/. The output checksum manifest SHA-256 is `acaf5b6b9c0183087548916c387b810a6d939fd81e3953ee222c3fb30acfc630`.
+Replay logs remain outside the tracked release package in research/. The original replay checksum manifest SHA-256 was `acaf5b6b9c0183087548916c387b810a6d939fd81e3953ee222c3fb30acfc630`. After regenerating the public documents to remove internal process wording, the current output checksum manifest SHA-256 is `0b36766a69648090e55eee1bdb58cc5a35d788c694e55646b6ab94dec01a679a`. The numerical study outputs are unchanged.
 

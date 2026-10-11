@@ -195,7 +195,7 @@ The single study command checks frozen input hashes, writes fixed splits before 
 
 CI performs these checks on small fixtures, with networking disabled during checks, and verifies tracked frozen outputs. The full study is run locally for the release package. Cross-platform floating-point libraries can alter final digits; byte-identical replay is verified on the recorded local runtime, not promised universally.
 
-Code: Apache-2.0. Data: CC BY 4.0. See LICENSE, NOTICE and CITATION.cff. Local preparation only; publication requires the Director's release check.
+Code: Apache-2.0. Data: CC BY 4.0. See LICENSE, NOTICE and CITATION.cff.
 """
     (root / "README.md").write_text(readme)
     # Five explicit pages. The Markdown and fixed-page PDF use the same content.
@@ -284,7 +284,7 @@ Network lengths above the declared 100 km plausibility threshold occur in {audit
 
 Missing age and condition affect every one of the {audit["2020"]["health_unavailable"]:,} later records. This prevents an empirical health ranking, an age baseline, both requested replacement comparators and a condition-risk validation. These are unfinished requirements because the required source fields do not exist, not because synthetic substitutes have been accepted. Failure dates, longitudinal identity, input observation dates, independently measured intervention effects and locally justified consequence and cost models are also needed before operational translation.
 
-One command, python -m frontier.study, rebuilds the entire analysis without network from the included raw files and pinned protocol. Frozen byte sizes and SHA-256 values are verified before reading. Splits are emitted before scoring. Seeds, runtime versions and interval scopes are in outputs/provenance.json; every generated output is covered by outputs/SHA256SUMS. Fixture tests cover leakage separation, calibration roles, bad outcomes, missing age and budget optimality. CI runs lint, types, offline fixtures and checksum verification. A local clean-checkout replay receipt with commands and exit codes is maintained in docs/REPLAY.md. The complete release package remains local pending the Director's release check.
+One command, python -m frontier.study, rebuilds the entire analysis without network from the included raw files and pinned protocol. Frozen byte sizes and SHA-256 values are verified before reading. Splits are emitted before scoring. Seeds, runtime versions and interval scopes are in outputs/provenance.json; every generated output is covered by outputs/SHA256SUMS. Fixture tests cover leakage separation, calibration roles, bad outcomes, missing age and budget optimality. CI runs lint, types, offline fixtures and checksum verification. A local clean-checkout replay receipt with commands and exit codes is maintained in docs/REPLAY.md.
 """,
     ]
     (root / "docs/TECHNICAL_NOTE.md").write_text(
@@ -337,7 +337,7 @@ One command, python -m frontier.study, rebuilds the entire analysis without netw
 <div class="table-wrap" tabindex="0" role="region" aria-label="Frontier table"><table><caption>Complete-register scenario; source: frontier.json</caption><thead><tr><th scope="col">Spend, assumed CAD</th><th scope="col">Risk reduction</th><th scope="col">95% interval</th><th scope="col">Refurbish</th><th scope="col">Replace</th></tr></thead><tbody>{point_rows}</tbody></table></div></section>
 <section id="quality"><h2>A register audit changes the interpretation</h2><p>{audit["2020"]["exact_duplicate_excess"]} excess identical rows are retained because physical identities are absent. {audit["2020"]["issue_counts"]["suspect_network_length_over_100_km"]} length values exceed an assumed 100 km plausibility threshold. Length is excluded; its ranking impact is measured separately. All records lack age and measured condition inputs.</p></section>
 <section><h2>Inspect and reproduce</h2><p>The source is licensed CC BY 4.0. Code is Apache-2.0. No tracking or remote scripts are used.</p><ul><li><a href="../TECHNICAL_NOTE.pdf">Five-page technical note</a></li><li><a href="../../README.md">Results and rebuild instructions</a></li><li><a href="../../DATA.md">Verbatim licence and attribution</a></li><li><a href="../../outputs/evaluation.json">Evaluation and denominators</a></li><li><a href="../../outputs/frontier.json">Frontier and comparator rules</a></li><li><a href="../../outputs/audit.json">Register audit</a></li><li><a href="../../outputs/ranking-sensitivity.json">Ranking sensitivity</a></li><li><a href="../../outputs/SHA256SUMS">Output checksums</a></li></ul></section></main>
-<footer>ElementeX Labs Inc. / Research on a public register / Local release candidate pending the Director's check.<br>Source: Bravo M, Lozano and Alvarez (2021), DOI <a href="https://data.mendeley.com/datasets/yzyj46xpmy/4">10.17632/yzyj46xpmy.4</a>. Data modified in derived outputs; no endorsement implied.</footer></body></html>
+<footer>ElementeX Labs Inc. / Research on a public register<br>Source: Bravo M, Lozano and Alvarez (2021), DOI <a href="https://data.mendeley.com/datasets/yzyj46xpmy/4">10.17632/yzyj46xpmy.4</a>. Data modified in derived outputs; no endorsement implied.</footer></body></html>
 """
     (site / "index.html").write_text(site_html)
     (

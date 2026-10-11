@@ -66,4 +66,4 @@ The single study command checks frozen input hashes, writes fixed splits before 
 
 CI performs these checks on small fixtures, with networking disabled during checks, and verifies tracked frozen outputs. The full study is run locally for the release package. Cross-platform floating-point libraries can alter final digits; byte-identical replay is verified on the recorded local runtime, not promised universally.
 
-Code: Apache-2.0. Data: CC BY 4.0. See LICENSE, NOTICE and CITATION.cff. Local preparation only; publication requires the Director's release check.
+Code: Apache-2.0. Data: CC BY 4.0. See LICENSE, NOTICE and CITATION.cff.
