@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "doi": "10.17632/yzyj46xpmy.4",
+  "landing_page": "https://data.mendeley.com/datasets/yzyj46xpmy/4",
+  "version": 4,
+  "published": "2021-09-17T14:29:35.617Z",
+  "description_verbatim": " Dataset contains 16.000 electric power distribution transformers from Cauca Department (Colombia).\nThey are distributed in rural and urban areas of 42 municipalities. The information covers\n2019 and 2020 years, has 6 categorical variables and 5 continuous variables. First ones correspond to:\nlocation, self-protected, removable connector, criticality according to ceraunic level, client and\ninstallation type. Second ones are transformer power, burn rate, users number, unsupplied electricity\nand secondary lines length.",
+  "licence": {
+    "id": "01d9c749-3c4d-4431-9df3-620b2dcfe144",
+    "short_name": "CC BY 4.0",
+    "full_name": "Creative Commons Attribution 4.0 International",
+    "description": "You can share, copy and modify this dataset so long as you give appropriate credit, provide a link to the CC BY license, and indicate if changes were made, but you may not do so in a way that suggests the rights holder has endorsed you or your use of the dataset. Note that further permission may be required for any content within the dataset that is identified as belonging to a third party.",
+    "url": "http://creativecommons.org/licenses/by/4.0",
+    "category": "Creative",
+    "customer_id": null
+  },
+  "attribution_verbatim": "Bravo M, Diego A; Lozano, Carlos; Alvarez, Laura (2021), 'Dataset of Distribution Transformers at Cauca Department (Colombia)', Mendeley Data, v4, http://doi.org/10.17632/yzyj46xpmy.4",
+  "files": [
+    {
+      "path": "data/raw/Dataset_Year_2019.xlsx",
+      "bytes": 1211872,
+      "sha256": "e7dd9283eb0870ef29fff83c4573373941dfd24b2842a665263ae2ea02c27d77",
+      "url": "https://data.mendeley.com/public-files/datasets/yzyj46xpmy/files/0f334045-f033-44ff-b896-dd6b72ed4198/file_downloaded",
+      "records": 15873,
+      "fields": [
+        "LOCATION",
+        "POWER",
+        "SELF-PROTECTION",
+        "Average earth discharge density DDT [Rays/km^2-a\u00f1o]",
+        "Maximum ground discharge density DDT [Rays/km^2-a\u00f1o]",
+        "Burning rate  [Failures/year]",
+        "Criticality according to previous study for ceramics level",
+        "Removable connectors",
+        "Type of clients",
+        "Number of users",
+        "Electric power not supplied EENS [kWh] ",
+        "Type of installation",
+        "Air network",
+        "Circuit Queue",
+        "km of network LT:",
+        "Burned transformers 2019"
+      ]
+    },
+    {
+      "path": "data/raw/Dataset_Year_2020.xlsx",
+      "bytes": 1203573,
+      "sha256": "22e0d23fd5d2efd4888737edf0657f9fb0044a89e8d66e91f0cda16682de93ca",
+      "url": "https://data.mendeley.com/public-files/datasets/yzyj46xpmy/files/9798091b-3770-40ab-93b3-4c72a34c3d28/file_downloaded",
+      "records": 15873,
+      "fields": [
+        "LOCATION",
+        "POWER",
+        "SELF-PROTECTION",
+        "Average earth discharge density DDT [Rays/km^2-a\u00f1o]",
+        "Maximum ground discharge density DDT [Rays/km^2-a\u00f1o]",
+        "Burning rate  [Failures/year]",
+        "Criticality according to previous study for ceramics level",
+        "Removable connectors",
+        "Type of clients",
+        "Number of users",
+        "Electric power not supplied EENS [kWh] ",
+        "Type of installation",
+        "Air network",
+        "Circuit Queue",
+        "km of network LT:",
+        "Burned transformers 2020"
+      ]
+    }
+  ],
+  "outcome": "Annual binary burned-transformer label in each workbook. No within-year failure dates.",
+  "limitations": [
+    "No installation date or age",
+    "No asset identifier or feeder/municipality key",
+    "No measured condition observations",
+    "Feature observation timestamps undocumented; retrospective analysis only"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "version": "p1-1",
+  "seed": 20261011,
+  "folds": 5,
+  "calibration_modulus": 5,
+  "group_rule": "SHA-256 of canonical predictor values; fold = first 8 hex digits modulo 5; calibration = next 8 hex digits modulo 5 equals 0 among non-test groups",
+  "train_year": 2019,
+  "test_year": 2020,
+  "predictor_columns": [
+    "location",
+    "power",
+    "self_protection",
+    "ddt_average",
+    "ddt_maximum",
+    "connectors",
+    "client_type",
+    "users",
+    "installation_type",
+    "air_network",
+    "circuit_queue",
+    "network_km"
+  ],
+  "excluded_predictors": {
+    "burning_rate": "Outcome-derived failure rate; observation window unknown",
+    "criticality": "Derived prior study; construction unknown",
+    "eens": "Potential post-outcome consequence; timing unknown",
+    "burned": "Target"
+  },
+  "model_parameters": {
+    "logistic": {
+      "C": 1.0,
+      "max_iter": 1000
+    },
+    "gradient_boosted": {
+      "learning_rate": 0.08,
+      "max_iter": 80,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 5.0,
+      "min_samples_leaf": 30
+    }
+  },
+  "metric_bootstraps": 400,
+  "failure_model_bootstraps": 100,
+  "inspection_fractions": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "capital_model": "logistic",
+  "capital_model_reason": "Predeclared interpretable model; no selection using test outcomes",
+  "budgets_cad": [
+    0,
+    300000,
+    600000,
+    1200000,
+    2400000,
+    4800000,
+    9600000
+  ],
+  "costs": {
+    "status": "assumption, constant CAD scenario units, not a quotation",
+    "replacement": 12000,
+    "refurbishment": 6000
+  },
+  "intervention_effects": {
+    "status": "assumed causal effects, not estimated from fleet",
+    "replacement": 0.9,
+    "refurbishment": 0.6
+  },
+  "consequence": "Number of users as customer-interruption proxy; no duration or money valuation",
+  "interval_level": 0.95
+}
